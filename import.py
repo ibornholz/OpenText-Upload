@@ -2,16 +2,16 @@ import requests
 import os
 
 # Eingabe: Personalnummer und Dateiname
-persnr = '00901073'  # ← gewünschte Personalnummer
-local_file_name = 'test2.pdf'
+persnr = '12345'  # ← gewünschte Personalnummer
+local_file_name = 'test.pdf'
 
 # Basis-URLs
-BASE_URL = 'https://otcs.sg77-test.opentext.cloud/cs/cs/api/v1'
+BASE_URL = 'PATH TO OT /cs/cs/api/v1'
 API_ROOT = BASE_URL.replace('/api/v1', '')  # z.B. https://.../cs/cs
 
 # Benutzeranmeldeinformationen
-username = 'bizadmin'
-password = '7ul&4$2+Y$SqzZ|?OiK'
+username = 'UNAME'
+password = 'PASS'
 
 # 1. Authentifizierung
 auth_url = f'{BASE_URL}/auth'
